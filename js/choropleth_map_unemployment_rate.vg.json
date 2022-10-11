@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Unemployment Rate (2021)",
+  "width": 800,
+  "height": 400,
+  "projection": {"type": "equalEarth"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/js/ne_110m.json",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "layer":[
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightskyblue"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/js/ne_110m.json",
+      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
+    {
+      "data": {
+      "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/js/ne_110m.json",
+      "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+    },
+    {
+      "transform": [
+        {"calculate": "'Unemployment data is not available in the country: ' + datum.properties.NAME", "as": "unavailable"}
+      ],
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "tooltip": {
+          "field": "unavailable"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/cleaned-data/unemployment.csv"
+            },
+            "key": "Country Name",
+            "fields": ["most_recent_year"]
+          }
+        },
+        {"calculate": "datum.most_recent_year", "as": "2021-unemployment"}
+      ],
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "2021-unemployment",
+          "scale": {
+            "type": "threshold",
+            "domain": [5, 10, 15, 20],
+            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#c4490c","#a63603"]
+          },
+          "title": "Unemployment Rate"
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+          {"field": "most_recent_year", "type": "quantitative", "format": ".2f", "title": "Unemployment Rate (%)"}
+        ]
+      }
+    }
+  ]
+}

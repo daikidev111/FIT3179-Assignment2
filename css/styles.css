@@ -1,0 +1,20 @@
+#bubble_plot {
+	top: 110px;
+	bottom: 100px; 
+	left: 150px;
+	height: 1000px;
+	width: 800px;
+	/* text-align: center; */
+}
+#choropleth_map_unemployment_rate {
+	top: 110px;
+	bottom: 100px; 
+	left: 150px;
+	height: 1000px;
+	width: 800px;
+	/* text-align: center; */
+}
+
+.vega-embed summary {
+	top: 35px !important;
+}
