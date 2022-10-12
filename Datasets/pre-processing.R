@@ -24,7 +24,7 @@ gdp_df <- read.csv("GDP_per_capita.csv")
 covid_df <- read.csv("covid-data.csv")
 
 #https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?view=chart
-path_to_write <- "~/Desktop/FIT3179-Assignment2/Cleanded_Datasets/"
+path_to_write <- "~/Desktop/FIT3179-Assignment2/Cleaned_Datasets"
 
 ########## Data cleansing ###########
 gdp_df <- gdp_df %>% clean_names()
@@ -115,3 +115,4 @@ df.norm <- apply(df[,c("gdp_per_capita_us", "covid_new_case", "inflation_rate")]
 df$gdp_normalised = c(df.norm[, 1])
 df$covid_new_case_normalised = c(df.norm[, 2])
 df$inflation_normalised = c(df.norm[, 3])
+write.csv(df, paste(path_to_write, "three-line-chart.csv"), row.names=FALSE)
