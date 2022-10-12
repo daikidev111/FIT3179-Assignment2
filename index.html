@@ -1,29 +1,141 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <title>Bullying across Victoria</title>
+
+  <!-- Download the vega packages via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  <!-- CSS file -->
+
+  <!-- Import statement of pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font import statement -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-</head>
+  </head>
+
 <body>
 
-<div id="bubble_plot"></div>
-<div>
-</div>
-<div id="choropleth_map_unemployment_rate"></div>
+  <div class="page">
 
-<script type="text/javascript">
-  var spec = "js/bubble_plot.vg.json";
-  vegaEmbed('#bubble_plot', spec).then(function(result) {
-  }).catch(console.error);
-  var spec2 = "js/choropleth_map_unemployment_rate.vg.json";
-  vegaEmbed('#choropleth_map_unemployment_rate', spec2).then(function(result) {
-  }).catch(console.error);
-</script>
+    <!-- first pure group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <!-- title -->
+        <h1>MacroEconomic data across the world</h1>
+        <!-- Map description -->
+        <p>General Information (Maybe about the domain?)</p>
+      </div>
+    </div>
 
+    <!-- Choropleth map -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis1" class="vis-container"></div>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <!-- Explanation Text of the choropleth map -->
+        <p>Explanation of vis1</p>
+      </div>
+    </div>
+    <!-- end of the choropleth map section -->
+
+    <!-- Scatter Plot -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <!-- Explanation of the scatter plot -->
+        <p>Explanation of the scatter plot</p>
+      </div>
+    </div>
+    <!-- end of the scatter plot section -->
+
+    <!-- Two line plot -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+          <!-- title of the plot -->
+          <h2>Two line</h2>
+          <!-- Explanation of the plot -->
+          <p></p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <!-- Two line plot visualisation -->
+        <div id="" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- End of the two line plot visualisation -->
+
+    <!-- Other data visualisation  -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+          <!-- Title of the visualisaiton -->
+          <h2>Other</h2>
+          <!-- Description of the data vis -->
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- end of the vis -->
+
+    
+    <!-- vis -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-right">
+          <!-- title of the plot -->
+          <h2>Last vis</h2>
+          <!-- Explanation of the plot -->
+          <p></p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- End of the visualisation -->
+
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by <a href="https://github.com/daikidev111">Daiki Kubo</a>
+      </div>
+    </div>
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var spec_choropleth = "js/choropleth_map_unemployment_rate.vg.json";
+    var spec_bubble_plot = "js/bubble_plot.vg.json";
+
+    vegaEmbed('#vis1', spec_choropleth, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis2', spec_bubble_plot, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+
+
+  </script>
 </body>
+
 </html>
