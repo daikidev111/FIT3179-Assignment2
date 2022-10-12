@@ -4,7 +4,7 @@
   "height": 600,
   "title": "Income level against GDP and Unemployment in 2019",
   "data": {
-    "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/cleaned-data/economics.csv"
+    "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/cleaned-data/economics.csv"
   },
   "params": [
     {

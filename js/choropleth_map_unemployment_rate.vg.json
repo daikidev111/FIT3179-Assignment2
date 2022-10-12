@@ -47,7 +47,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/cleaned-data/unemployment.csv"
+              "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/cleaned-data/unemployment.csv"
             },
             "key": "Country Name",
             "fields": ["most_recent_year"]
