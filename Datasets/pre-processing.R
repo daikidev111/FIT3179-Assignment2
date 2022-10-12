@@ -24,7 +24,7 @@ gdp_df <- read.csv("GDP_per_capita.csv")
 covid_df <- read.csv("covid-data.csv")
 
 #https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?view=chart
-path_to_write <- "~/Desktop/FIT3179-Assignment2/Cleaned_Datasets"
+path_to_write <- "~/Desktop/FIT3179-Assignment2/Cleaned_Datasets/"
 
 ########## Data cleansing ###########
 gdp_df <- gdp_df %>% clean_names()
@@ -116,3 +116,21 @@ df$gdp_normalised = c(df.norm[, 1])
 df$covid_new_case_normalised = c(df.norm[, 2])
 df$inflation_normalised = c(df.norm[, 3])
 write.csv(df, paste(path_to_write, "three-line-chart.csv"), row.names=FALSE)
+
+
+# Heatmap i
+#install.packages("corrr")
+library(corrr)
+heat_df <- read.csv("final_demographics_data.csv")
+heat_df <- select(heat_df, -c(1:2))
+
+i <- c(1:59)
+heat_df[] <- lapply(heat_df, function(x) as.numeric(as.character(x)))
+
+by(heat_df, factor(), function(df) round(cor(df[11:15]), digits = 4))
+heat_df %>% correlate() %>% focus(heat_df)
+#heat_df <- heat_df %>% na.omit(heat_df)
+
+
+
+
