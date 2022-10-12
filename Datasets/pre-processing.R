@@ -123,14 +123,17 @@ write.csv(df, paste(path_to_write, "three-line-chart.csv"), row.names=FALSE)
 library(corrr)
 heat_df <- read.csv("final_demographics_data.csv")
 heat_df <- select(heat_df, -c(1:2))
-
-i <- c(1:59)
-heat_df[] <- lapply(heat_df, function(x) as.numeric(as.character(x)))
-
-by(heat_df, factor(), function(df) round(cor(df[11:15]), digits = 4))
-heat_df %>% correlate() %>% focus(heat_df)
-#heat_df <- heat_df %>% na.omit(heat_df)
-
+heat_df <- data.frame(apply(heat_df, 2, as.numeric))
+corr_mat <- round(cor(heat_df),2)
+corr_mat <- as.data.frame(corr_mat) 
+corr_mat$y <- colnames(corr_mat)
+corr_mat$x <- rownames(corr_mat)
+write.csv(corr_mat, paste(path_to_write, "correlation_map.csv"), row.names=TRUE)
 
 
-
+# pie chart
+ind_gdp_df <- data.frame(
+  industry_type = c("Finance", "Business Service", "Government", "Manufacturing", "Education, HealthCare", "Wholesale Trade", "Retail Trade", "Information", "Construction", "Others"),
+  gdp_percentage = c(22.3, 12.8, 12.6, 10.8, 8.6, 5.8, 5.7, 5.5, 4.3, 11.6)
+)
+write.csv(ind_gdp_df, paste(path_to_write, "industry_gdp_us_2020.csv"), row.names = FALSE)
