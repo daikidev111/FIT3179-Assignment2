@@ -6,3 +6,9 @@
 3. Add an annotation in the chart
 4. show the value up to 2 sig fig
 5. Show the non-standardized value in the tooltip
+
+
+# radial bar chart
+1. embed in the vis
+2. modify tooltip
+3. legend and interaction with it
