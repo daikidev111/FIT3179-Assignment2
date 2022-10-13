@@ -1,0 +1,6 @@
+
+
+# line-chart.vg.json
+1. Fix the direct legend interaction
+2. Fix the year not showing in the tooltip
+3. Add an annotation in the chart

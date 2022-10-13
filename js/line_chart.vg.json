@@ -16,7 +16,7 @@
             }],
             "mark": "point",
             "encoding": {
-              "x": {"field": "year", "type": "temporal", "axis": null},
+              "x": {"field": "year", "type": "temporal"},
               "opacity": {"value": 0}
             }
         },
@@ -29,11 +29,23 @@
                 "bind": "legend"
               }
             },
-            "mark": "line",
+            "mark": {
+                "type": "line",
+                "point": {
+                    "filled": false,
+                    "fill": "white"
+                }
+            },
             "encoding": {
-            "x": {"field": "year", "type": "temporal", "title": "Year"},
-            "y": {"field": "value", "type": "quantitative", "title": "Standardised Value"},
-            "color": {"field": "category", "type": "nominal", "title": "Category"}
+              "x": {"field": "year", "type": "temporal", "title": "Year"},
+              "y": {"field": "value", "type": "quantitative", "title": "Standardised Value"},
+              "color": {"field": "category", "type": "nominal", "title": "Category"},
+              "tooltip": [
+                {"field": "category", "type": "nominal"},
+                {"field": "year", "type": "temporal", "format": ","},
+                {"field": "value", "type": "quantitative", "format": ","}
+
+              ]
             },
             "opacity": {
               "condition": {
@@ -45,7 +57,7 @@
         {
             "transform": [{"filter": {"param": "index"}}],
             "encoding": {
-              "x": {"field": "year", "type": "temporal", "axis": null},
+              "x": {"field": "year", "type": "temporal"},
               "color": {"value": "firebrick"}
             },
             "layer": [
