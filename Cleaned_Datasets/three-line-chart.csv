@@ -1,11 +1,31 @@
-"country","year","gdp_per_capita_us","covid_new_case","inflation_rate","gdp_normalised","covid_new_case_normalised","inflation_normalised"
-"United States",2012,51784,0,1.7,0,0,0.158730158730159
-"United States",2013,53291,0,1.5,0.0860946069469836,0,0.126984126984127
-"United States",2014,55124,0,0.8,0.19081352833638,0,0.0158730158730159
-"United States",2015,56763,0,0.7,0.284449268738574,0,0
-"United States",2016,57867,0,2.1,0.347520566727605,0,0.222222222222222
-"United States",2017,59915,0,2.1,0.46452239488117,0,0.222222222222222
-"United States",2018,62805,0,1.9,0.629627513711152,0,0.19047619047619
-"United States",2019,65095,0,2.3,0.760454753199269,0,0.253968253968254
-"United States",2020,63028,20221641,1.4,0.642367458866545,0.582914804488599,0.111111111111111
-"United States",2021,69288,34690560,7,1,1,1
+"country","year","category","value"
+"United States",2012,"GDP Per Capita",-1.38748924836408
+"United States",2012,"COVID-19 New Cases",-0.455008436050391
+"United States",2012,"Inflation Rate",-0.251885837624553
+"United States",2013,"GDP Per Capita",-1.11636031977426
+"United States",2013,"COVID-19 New Cases",-0.455008436050391
+"United States",2013,"Inflation Rate",-0.36383509879102
+"United States",2014,"GDP Per Capita",-0.786579745052873
+"United States",2014,"COVID-19 New Cases",-0.455008436050391
+"United States",2014,"Inflation Rate",-0.755657512873658
+"United States",2015,"GDP Per Capita",-0.491702297170517
+"United States",2015,"COVID-19 New Cases",-0.455008436050391
+"United States",2015,"Inflation Rate",-0.811632143456891
+"United States",2016,"GDP Per Capita",-0.293078317632921
+"United States",2016,"COVID-19 New Cases",-0.455008436050391
+"United States",2016,"Inflation Rate",-0.0279873152916169
+"United States",2017,"GDP Per Capita",0.0753835574513161
+"United States",2017,"COVID-19 New Cases",-0.455008436050391
+"United States",2017,"Inflation Rate",-0.0279873152916169
+"United States",2018,"GDP Per Capita",0.595332199537959
+"United States",2018,"COVID-19 New Cases",-0.455008436050391
+"United States",2018,"Inflation Rate",-0.139936576458085
+"United States",2019,"GDP Per Capita",1.00733302665852
+"United States",2019,"COVID-19 New Cases",-0.455008436050391
+"United States",2019,"Inflation Rate",0.0839619458748508
+"United States",2020,"GDP Per Capita",0.635452804100354
+"United States",2020,"COVID-19 New Cases",1.22057860621413
+"United States",2020,"Inflation Rate",-0.419809729374254
+"United States",2021,"GDP Per Capita",1.76170834024651
+"United States",2021,"COVID-19 New Cases",2.419488882189
+"United States",2021,"Inflation Rate",2.71476958328684

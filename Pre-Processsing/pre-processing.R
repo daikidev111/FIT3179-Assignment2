@@ -101,20 +101,46 @@ gdp_covid_df <-subset(gdp_covid_df, gdp_covid_df$country == "United States")
 
 df <- data.frame(
  country = rep(c("United States"), times=c(10)),
- year = seq(2012, 2021, by=1),
- gdp_per_capita_us = c(51784, 53291, 55124, 56763, 57867, 59915, 62805, 65095, 63028, 69288), 
- covid_new_case = c(0, 0, 0, 0, 0, 0, 0, 0, c.2020, c.2021),
- inflation_rate = c(1.7, 1.5, 0.8, 0.7, 2.1, 2.1, 1.9, 2.3, 1.4, 7)
+ year = rep(c(2012:2021), each=3),
+ category = rep(c("GDP Per Capita", "COVID-19 New Cases", "Inflation Rate")),
+ value= sample(0:2500, 30, replace=TRUE)
 )
 
-# normalization function for numerical variables
-normalization <- function(c) {
-  return((c-min(c))/(max(c)-min(c)))  
+
+gdp_per_capita_us = scale(c(51784, 53291, 55124, 56763, 57867, 59915, 62805, 65095, 63028, 69288))
+covid_new_case = scale(c(0, 0, 0, 0, 0, 0, 0, 0, c.2020, c.2021))
+inflation_rate = scale(c(1.7, 1.5, 0.8, 0.7, 2.1, 2.1, 1.9, 2.3, 1.4, 7))
+
+j = 1
+k = 1 
+l = 1
+for (i in 1:nrow(df)) {
+  if (i %% 3 == 1) {
+    df[i, 4] = gdp_per_capita_us[j]
+    print(gdp_per_capita_us[i])
+    print(df[i, 4])
+    j = j + 1
+  } else if (i %% 3 == 2) {
+    df[i, 4] = covid_new_case[k] 
+    k = k + 1
+  } else if (i %% 3 == 0) {
+    df[i, 4] = inflation_rate[l] 
+    l = l + 1
+  } else {
+    print("Error") 
+    print(i)
+  }
 }
-df.norm <- apply(df[,c("gdp_per_capita_us", "covid_new_case", "inflation_rate")], 2, normalization)
-df$gdp_normalised = c(df.norm[, 1])
-df$covid_new_case_normalised = c(df.norm[, 2])
-df$inflation_normalised = c(df.norm[, 3])
+
+# normalization function for numerical variables
+#normalization <- function(c) {
+#  return((c-min(c))/(max(c)-min(c)))  
+#}
+#df.norm <- apply(df[,c("gdp_per_capita_us", "covid_new_case", "inflation_rate")], 2, normalization)
+#df$gdp_normalised = c(df.norm[, 1])
+#df$covid_new_case_normalised = c(df.norm[, 2])
+#df$inflation_normalised = c(df.norm[, 3])
+
 write.csv(df, paste(path_to_write, "three-line-chart.csv"), row.names=FALSE)
 
 
