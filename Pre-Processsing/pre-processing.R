@@ -163,3 +163,20 @@ ind_gdp_df <- data.frame(
   gdp_percentage = c(22.3, 12.8, 12.6, 10.8, 8.6, 5.8, 5.7, 5.5, 4.3, 11.6)
 )
 write.csv(ind_gdp_df, paste(path_to_write, "industry_gdp_us_2020.csv"), row.names = FALSE)
+
+# sankey diagram
+import_df <- read.csv("import.csv")
+export_df <- read.csv("export.csv")
+import_df <- import_df %>% na.omit(import_df)
+export_df <- export_df %>% na.omit(export_df)
+import_df <- select(import_df, -c(5, 7:31))
+export_df <- select(export_df, -c(5, 6, 8))
+colnames(import_df)[5] = "value"
+colnames(export_df)[5] = "value"
+colnames(import_df)[1] = "to"
+colnames(export_df)[1] = "from"
+colnames(import_df)[2] = "from"
+colnames(export_df)[2] = "to"
+colnames(import_df)[4] = "trade_type"
+colnames(export_df)[4] = "trade_type"
+both_df = rbind(export_df, import_df)

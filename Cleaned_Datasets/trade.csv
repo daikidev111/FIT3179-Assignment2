@@ -1,0 +1,450 @@
+"from","to","Year","trade_type","value"
+"United States","Aruba",2020,"Export",309005.85
+"United States","Afghanistan",2020,"Export",670888.21
+"United States","Angola",2020,"Export",470520.73
+"United States","Anguila",2020,"Export",47057.01
+"United States","Albania",2020,"Export",56900.54
+"United States","Andorra",2020,"Export",3728.58
+"United States","United Arab Emirates",2020,"Export",14757886.26
+"United States","Argentina",2020,"Export",5950064
+"United States","Armenia",2020,"Export",28003.24
+"United States","Fr. So. Ant. Tr",2020,"Export",882.04
+"United States","Antigua and Barbuda",2020,"Export",312378.06
+"United States","Australia",2020,"Export",23473180.22
+"United States","Austria",2020,"Export",3398707.24
+"United States","Azerbaijan",2020,"Export",162084.34
+"United States","Burundi",2020,"Export",5405.37
+"United States","Belgium",2020,"Export",27620555.33
+"United States","Benin",2020,"Export",197553.55
+"United States","Burkina Faso",2020,"Export",72270.41
+"United States","Bangladesh",2020,"Export",1844186.7
+"United States","Bulgaria",2020,"Export",374878.36
+"United States","Bahrain",2020,"Export",885305.19
+"United States","Bahamas, The",2020,"Export",2868345.25
+"United States","Bosnia and Herzegovina",2020,"Export",21570.95
+"United States","Belarus",2020,"Export",112283.79
+"United States","Belize",2020,"Export",394206.91
+"United States","Bermuda",2020,"Export",465081.63
+"United States","Bolivia",2020,"Export",450802.31
+"United States","Brazil",2020,"Export",35046878.87
+"United States","Barbados",2020,"Export",516789.7
+"United States","Brunei",2020,"Export",119022.27
+"United States","Bhutan",2020,"Export",2857.35
+"United States","Botswana",2020,"Export",48679.4
+"United States","Central African Republic",2020,"Export",22329.87
+"United States","Canada",2020,"Export",255021619.21
+"United States","Cocos (Keeling) Islands",2020,"Export",120.4
+"United States","Switzerland",2020,"Export",17975822.41
+"United States","Chile",2020,"Export",12766531.69
+"United States","China",2020,"Export",124648507.63
+"United States","Cote d'Ivoire",2020,"Export",208067.27
+"United States","Cameroon",2020,"Export",194365.39
+"United States","Congo, Rep.",2020,"Export",102455.7
+"United States","Cook Islands",2020,"Export",3252.37
+"United States","Colombia",2020,"Export",12063010.2
+"United States","Comoros",2020,"Export",1410.57
+"United States","Cape Verde",2020,"Export",6670.25
+"United States","Costa Rica",2020,"Export",5733234.13
+"United States","Cuba",2020,"Export",176796.53
+"United States","Curaçao",2020,"Export",319245.5
+"United States","Christmas Island",2020,"Export",1978.19
+"United States","Cayman Islands",2020,"Export",748655.43
+"United States","Cyprus",2020,"Export",103120.42
+"United States","Czech Republic",2020,"Export",2985010.9
+"United States","Germany",2020,"Export",57163225.96
+"United States","Djibouti",2020,"Export",195164.67
+"United States","Dominica",2020,"Export",115129.55
+"United States","Denmark",2020,"Export",3057870.74
+"United States","Dominican Republic",2020,"Export",7604749.55
+"United States","Algeria",2020,"Export",726286.7
+"United States","East Asia & Pacific",2020,"Export",368148022.46
+"United States","Europe & Central Asia",2020,"Export",330747667.99
+"United States","Ecuador",2020,"Export",4234610.25
+"United States","Egypt, Arab Rep.",2020,"Export",4759077.43
+"United States","Eritrea",2020,"Export",18679.08
+"United States","Western Sahara",2020,"Export",6824.18
+"United States","Spain",2020,"Export",12869782.34
+"United States","Estonia",2020,"Export",323039.03
+"United States","Ethiopia(excludes Eritrea)",2020,"Export",907315.21
+"United States","Finland",2020,"Export",1586264.69
+"United States","Fiji",2020,"Export",39801.72
+"United States","Falkland Island",2020,"Export",305.61
+"United States","France",2020,"Export",28273988.24
+"United States","Faeroe Islands",2020,"Export",2792.62
+"United States","Micronesia, Fed. Sts.",2020,"Export",57944.87
+"United States","Gabon",2020,"Export",91495.64
+"United States","United Kingdom",2020,"Export",58975470.17
+"United States","Georgia",2020,"Export",436093.36
+"United States","Ghana",2020,"Export",831948.8
+"United States","Gibraltar",2020,"Export",1069431.24
+"United States","Guinea",2020,"Export",135647.94
+"United States","Gambia, The",2020,"Export",41677.75
+"United States","Guinea-Bissau",2020,"Export",3670.09
+"United States","Equatorial Guinea",2020,"Export",96894.48
+"United States","Greece",2020,"Export",1385275.66
+"United States","Grenada",2020,"Export",101403.62
+"United States","Greenland",2020,"Export",7017.69
+"United States","Guatemala",2020,"Export",5857927.17
+"United States","Guyana",2020,"Export",654571.52
+"United States","Hong Kong, China",2020,"Export",23957599.61
+"United States","Heard Island and McDonald Isla",2020,"Export",172.93
+"United States","Honduras",2020,"Export",4206697.28
+"United States","Croatia",2020,"Export",317986.78
+"United States","Haiti",2020,"Export",1403406.32
+"United States","Hungary",2020,"Export",2115867.32
+"United States","Indonesia",2020,"Export",7415716.99
+"United States","India",2020,"Export",27394259.97
+"United States","British Indian Ocean Ter.",2020,"Export",7299.94
+"United States","Ireland",2020,"Export",9555254.8
+"United States","Iran, Islamic Rep.",2020,"Export",36291.03
+"United States","Iraq",2020,"Export",771884.32
+"United States","Iceland",2020,"Export",292502.9
+"United States","Israel",2020,"Export",10188028.94
+"United States","Italy",2020,"Export",19920417.12
+"United States","Jamaica",2020,"Export",1696588.4
+"United States","Jordan",2020,"Export",1325367.2
+"United States","Japan",2020,"Export",64090703.42
+"United States","Kazakhstan",2020,"Export",509092.58
+"United States","Kenya",2020,"Export",370786.7
+"United States","Kyrgyz Republic",2020,"Export",32480.57
+"United States","Cambodia",2020,"Export",343625.56
+"United States","Kiribati",2020,"Export",1714.89
+"United States","St. Kitts and Nevis",2020,"Export",136067.1
+"United States","Korea, Rep.",2020,"Export",51212196.8
+"United States","Kuwait",2020,"Export",2240591.95
+"United States","Lao PDR",2020,"Export",24760.96
+"United States","Lebanon",2020,"Export",623933.15
+"United States","Liberia",2020,"Export",93152.92
+"United States","Libya",2020,"Export",316451.05
+"United States","St. Lucia",2020,"Export",637456.14
+"United States","Latin America & Caribbean",2020,"Export",341123038.77
+"United States","Sri Lanka",2020,"Export",354152.07
+"United States","Lesotho",2020,"Export",2192.07
+"United States","Lithuania",2020,"Export",1018752.03
+"United States","Luxembourg",2020,"Export",1353107.88
+"United States","Latvia",2020,"Export",306185.74
+"United States","Macao",2020,"Export",183004.73
+"United States","Morocco",2020,"Export",2298586.98
+"United States","Moldova",2020,"Export",49984.34
+"United States","Madagascar",2020,"Export",34809.24
+"United States","Maldives",2020,"Export",24659.95
+"United States","Middle East & North Africa",2020,"Export",55774811.91
+"United States","Mexico",2020,"Export",212671750.9
+"United States","Marshall Islands",2020,"Export",146526.64
+"United States","North Macedonia",2020,"Export",43806.97
+"United States","Mali",2020,"Export",99265.17
+"United States","Malta",2020,"Export",157277.28
+"United States","Myanmar",2020,"Export",338438.91
+"United States","Mongolia",2020,"Export",118901.56
+"United States","Montenegro",2020,"Export",36635.02
+"United States","Mozambique",2020,"Export",129010.94
+"United States","Mauritania",2020,"Export",127974.11
+"United States","Montserrat",2020,"Export",11599
+"United States","Mauritius",2020,"Export",49612.97
+"United States","Malawi",2020,"Export",13214.75
+"United States","Malaysia",2020,"Export",12498459.27
+"United States","North America",2020,"Export",255486700.83
+"United States","Namibia",2020,"Export",60146.06
+"United States","New Caledonia",2020,"Export",61053.38
+"United States","Niger",2020,"Export",143872.2
+"United States","Norfolk Island",2020,"Export",11706.53
+"United States","Nigeria",2020,"Export",2788420.06
+"United States","Nicaragua",2020,"Export",1429602.2
+"United States","Niue",2020,"Export",173.71
+"United States","Netherlands",2020,"Export",45508366.38
+"United States","Norway",2020,"Export",2785142.23
+"United States","Nepal",2020,"Export",93570.02
+"United States","Nauru",2020,"Export",607.03
+"United States","New Zealand",2020,"Export",3185107.02
+"United States","Oman",2020,"Export",1132932.3
+"United States","Pakistan",2020,"Export",2926365.25
+"United States","Panama",2020,"Export",5766188.86
+"United States","Peru",2020,"Export",7685741.23
+"United States","Philippines",2020,"Export",7764459.61
+"United States","Palau",2020,"Export",21107.17
+"United States","Papua New Guinea",2020,"Export",62493.53
+"United States","Poland",2020,"Export",4951225.42
+"United States","Portugal",2020,"Export",1650337.71
+"United States","Paraguay",2020,"Export",1274329.12
+"United States","Occ.Pal.Terr",2020,"Export",2304.97
+"United States","French Polynesia",2020,"Export",110541.08
+"United States","Qatar",2020,"Export",3415513.61
+"United States","Romania",2020,"Export",913971.88
+"United States","Russian Federation",2020,"Export",4883765.6
+"United States","Rwanda",2020,"Export",27402.4
+"United States","South Asia",2020,"Export",33310939.51
+"United States","Saudi Arabia",2020,"Export",11177094.25
+"United States","Senegal",2020,"Export",280137.11
+"United States","Serbia, FR(Serbia/Montenegro)",2020,"Export",174999.89
+"United States","Singapore",2020,"Export",27050553.87
+"United States","Saint Helena",2020,"Export",4856.19
+"United States","Solomon Islands",2020,"Export",4667.55
+"United States","Sierra Leone",2020,"Export",73828.32
+"United States","El Salvador",2020,"Export",2618698.81
+"United States","San Marino",2020,"Export",2060.61
+"United States","Somalia",2020,"Export",58945.82
+"United States","Saint Pierre and Miquelon",2020,"Export",271.95
+"United States","South Sudan",2020,"Export",40244
+"United States","Sub-Saharan Africa",2020,"Export",13321633.25
+"United States","Sao Tome and Principe",2020,"Export",733
+"United States","Sudan",2020,"Export",71709.84
+"United States","Suriname",2020,"Export",267424.98
+"United States","Slovak Republic",2020,"Export",336565.12
+"United States","Slovenia",2020,"Export",307881.6
+"United States","Sweden",2020,"Export",4688570.4
+"United States","Eswatini",2020,"Export",21406.12
+"United States","Saint Maarten (Dutch part)",2020,"Export",335607.71
+"United States","Seychelles",2020,"Export",17062.46
+"United States","Syrian Arab Republic",2020,"Export",2134.12
+"United States","Turks and Caicos Isl.",2020,"Export",260063.02
+"United States","Chad",2020,"Export",46145.95
+"United States","Togo",2020,"Export",319564.05
+"United States","Thailand",2020,"Export",11169543.49
+"United States","Tajikistan",2020,"Export",7564.52
+"United States","Tokelau",2020,"Export",87.42
+"United States","Turkmenistan",2020,"Export",32907.93
+"United States","East Timor",2020,"Export",9329.93
+"United States","Tonga",2020,"Export",14722.08
+"United States","Trinidad and Tobago",2020,"Export",2370080.8
+"United States","Tunisia",2020,"Export",433877.83
+"United States","Turkey",2020,"Export",10007520.76
+"United States","Tuvalu",2020,"Export",1682
+"United States","Tanzania",2020,"Export",245762.98
+"United States","Uganda",2020,"Export",94995.13
+"United States","Ukraine",2020,"Export",1840287.62
+"United States","Uruguay",2020,"Export",1249984.62
+"United States","Uzbekistan",2020,"Export",180939.68
+"United States","Holy See",2020,"Export",314.94
+"United States","St. Vincent and the Grenadines",2020,"Export",76873.71
+"United States","Venezuela",2020,"Export",1131386.99
+"United States","British Virgin Islands",2020,"Export",284149.5
+"United States","Vietnam",2020,"Export",9989334.12
+"United States","Vanuatu",2020,"Export",7014.19
+"United States"," World",2020,"Export",1430253623.49
+"United States","Wallis and Futura Isl.",2020,"Export",156.17
+"United States","Samoa",2020,"Export",26307.39
+"United States","Yemen",2020,"Export",331127.67
+"United States","South Africa",2020,"Export",4454735.15
+"United States","Congo, Dem. Rep.",2020,"Export",152906.39
+"United States","Zambia",2020,"Export",71820.75
+"United States","Zimbabwe",2020,"Export",46428.94
+"Aruba","United States",2020,"Import",34710.31
+"Afghanistan","United States",2020,"Import",17329.15
+"Angola","United States",2020,"Import",497345.89
+"Anguila","United States",2020,"Import",1687.13
+"Albania","United States",2020,"Import",48815.31
+"Andorra","United States",2020,"Import",5492.13
+"United Arab Emirates","United States",2020,"Import",3234654.8
+"Argentina","United States",2020,"Import",4378126.24
+"Armenia","United States",2020,"Import",70559.97
+"Fr. So. Ant. Tr","United States",2020,"Import",74.97
+"Antigua and Barbuda","United States",2020,"Import",4480.56
+"Australia","United States",2020,"Import",14334509.77
+"Austria","United States",2020,"Import",11767580.32
+"Azerbaijan","United States",2020,"Import",39297.78
+"Burundi","United States",2020,"Import",3994.2
+"Belgium","United States",2020,"Import",21365556.89
+"Benin","United States",2020,"Import",5824.4
+"Burkina Faso","United States",2020,"Import",5213.82
+"Bangladesh","United States",2020,"Import",6308243.14
+"Bulgaria","United States",2020,"Import",884520.04
+"Bahrain","United States",2020,"Import",669901.12
+"Bahamas, The","United States",2020,"Import",287396.56
+"Bosnia and Herzegovina","United States",2020,"Import",102009.52
+"Belarus","United States",2020,"Import",354986.52
+"Belize","United States",2020,"Import",53910.75
+"Bermuda","United States",2020,"Import",25207.03
+"Bolivia","United States",2020,"Import",389076.64
+"Brazil","United States",2020,"Import",24421640.76
+"Barbados","United States",2020,"Import",49839.17
+"Brunei","United States",2020,"Import",90301.86
+"Bhutan","United States",2020,"Import",434.91
+"Botswana","United States",2020,"Import",178253.14
+"Central African Republic","United States",2020,"Import",992.18
+"Canada","United States",2020,"Import",276195545.88
+"Cocos (Keeling) Islands","United States",2020,"Import",1782.44
+"Switzerland","United States",2020,"Import",75504461.81
+"Chile","United States",2020,"Import",10917000.71
+"China","United States",2020,"Import",457164215.51
+"Cote d'Ivoire","United States",2020,"Import",914503.08
+"Cameroon","United States",2020,"Import",452715.31
+"Congo, Rep.","United States",2020,"Import",139972.53
+"Cook Islands","United States",2020,"Import",2481.28
+"Colombia","United States",2020,"Import",11310309.33
+"Comoros","United States",2020,"Import",3444.26
+"Cape Verde","United States",2020,"Import",4782.31
+"Costa Rica","United States",2020,"Import",5622497.4
+"Curaçao","United States",2020,"Import",28926.28
+"Christmas Island","United States",2020,"Import",476.82
+"Cayman Islands","United States",2020,"Import",20683.56
+"Cyprus","United States",2020,"Import",60769.56
+"Czech Republic","United States",2020,"Import",5706788.16
+"Germany","United States",2020,"Import",117393017.84
+"Djibouti","United States",2020,"Import",40949.23
+"Dominica","United States",2020,"Import",1875.39
+"Denmark","United States",2020,"Import",11836868.36
+"Dominican Republic","United States",2020,"Import",5346080.63
+"Algeria","United States",2020,"Import",498853.71
+"Ecuador","United States",2020,"Import",6384468.6
+"Egypt, Arab Rep.","United States",2020,"Import",2303710.28
+"Eritrea","United States",2020,"Import",289.08
+"Western Sahara","United States",2020,"Import",19
+"Spain","United States",2020,"Import",15925756.98
+"Estonia","United States",2020,"Import",1101119.29
+"Ethiopia(excludes Eritrea)","United States",2020,"Import",540458.33
+"Finland","United States",2020,"Import",5098572.16
+"Fiji","United States",2020,"Import",267147.98
+"Falkland Island","United States",2020,"Import",11761.56
+"France","United States",2020,"Import",43871784.33
+"Faeroe Islands","United States",2020,"Import",151199.85
+"Micronesia, Fed. Sts.","United States",2020,"Import",2988.78
+"Gabon","United States",2020,"Import",83634.97
+"United Kingdom","United States",2020,"Import",50839851.48
+"Georgia","United States",2020,"Import",157327.04
+"Ghana","United States",2020,"Import",759858.88
+"Gibraltar","United States",2020,"Import",22363.53
+"Guinea","United States",2020,"Import",9893.5
+"Gambia, The","United States",2020,"Import",1157.21
+"Guinea-Bissau","United States",2020,"Import",924.34
+"Equatorial Guinea","United States",2020,"Import",145504.99
+"Greece","United States",2020,"Import",1412356.95
+"Grenada","United States",2020,"Import",13871.11
+"Greenland","United States",2020,"Import",29197.61
+"Guatemala","United States",2020,"Import",4170606.49
+"Guyana","United States",2020,"Import",724260.96
+"Hong Kong, China","United States",2020,"Import",8012202.17
+"Heard Island and McDonald Isla","United States",2020,"Import",16.16
+"Honduras","United States",2020,"Import",4073688.72
+"Croatia","United States",2020,"Import",615938.1
+"Haiti","United States",2020,"Import",861814
+"Hungary","United States",2020,"Import",5388419.29
+"Indonesia","United States",2020,"Import",21287064.43
+"India","United States",2020,"Import",53567301.6
+"British Indian Ocean Ter.","United States",2020,"Import",176.34
+"Ireland","United States",2020,"Import",65779092.04
+"Iran, Islamic Rep.","United States",2020,"Import",3915.2
+"Iraq","United States",2020,"Import",3266587.48
+"Iceland","United States",2020,"Import",453319.88
+"Israel","United States",2020,"Import",15597596.45
+"Italy","United States",2020,"Import",50996273.74
+"Jamaica","United States",2020,"Import",396397.12
+"Jordan","United States",2020,"Import",1920196.54
+"Japan","United States",2020,"Import",122483985.44
+"Kazakhstan","United States",2020,"Import",938497.14
+"Kenya","United States",2020,"Import",584534.21
+"Kyrgyz Republic","United States",2020,"Import",6018.62
+"Cambodia","United States",2020,"Import",6883532.03
+"Kiribati","United States",2020,"Import",1184
+"St. Kitts and Nevis","United States",2020,"Import",50967.84
+"Korea, Rep.","United States",2020,"Import",78292069.68
+"Kuwait","United States",2020,"Import",681801.98
+"Lao PDR","United States",2020,"Import",107060.66
+"Lebanon","United States",2020,"Import",198068.17
+"Liberia","United States",2020,"Import",48192.73
+"Libya","United States",2020,"Import",224894.53
+"St. Lucia","United States",2020,"Import",9101.83
+"Sri Lanka","United States",2020,"Import",2552281.22
+"Lesotho","United States",2020,"Import",312511.77
+"Lithuania","United States",2020,"Import",1386965.22
+"Luxembourg","United States",2020,"Import",507178.8
+"Latvia","United States",2020,"Import",547250.35
+"Macao","United States",2020,"Import",103941.21
+"Morocco","United States",2020,"Import",1095590.64
+"Moldova","United States",2020,"Import",60086.52
+"Madagascar","United States",2020,"Import",626004.77
+"Maldives","United States",2020,"Import",16758.95
+"Mexico","United States",2020,"Import",328861803.53
+"Marshall Islands","United States",2020,"Import",32599.95
+"North Macedonia","United States",2020,"Import",164356.49
+"Mali","United States",2020,"Import",2347.49
+"Malta","United States",2020,"Import",176777.11
+"Myanmar","United States",2020,"Import",1073934.77
+"Mongolia","United States",2020,"Import",11835.24
+"Montenegro","United States",2020,"Import",5854.48
+"Mozambique","United States",2020,"Import",111615.61
+"Mauritania","United States",2020,"Import",6207.35
+"Montserrat","United States",2020,"Import",1535.88
+"Mauritius","United States",2020,"Import",251224.25
+"Malawi","United States",2020,"Import",44286.62
+"Malaysia","United States",2020,"Import",45332964.68
+"Namibia","United States",2020,"Import",91300.57
+"New Caledonia","United States",2020,"Import",31702.64
+"Niger","United States",2020,"Import",79548.5
+"Norfolk Island","United States",2020,"Import",39.44
+"Nigeria","United States",2020,"Import",1555144.12
+"Nicaragua","United States",2020,"Import",3658926.07
+"Niue","United States",2020,"Import",532.53
+"Netherlands","United States",2020,"Import",28204641.89
+"Norway","United States",2020,"Import",4152721.28
+"Nepal","United States",2020,"Import",92585.24
+"Nauru","United States",2020,"Import",3764.04
+"New Zealand","United States",2020,"Import",4375785.61
+"Oman","United States",2020,"Import",888624.23
+"Pakistan","United States",2020,"Import",4115927.8
+"Panama","United States",2020,"Import",711141.3
+"Peru","United States",2020,"Import",5929121.33
+"Philippines","United States",2020,"Import",11507053.8
+"Palau","United States",2020,"Import",510.21
+"Papua New Guinea","United States",2020,"Import",90011.2
+"Poland","United States",2020,"Import",8873019.89
+"Portugal","United States",2020,"Import",4046973.1
+"Paraguay","United States",2020,"Import",160546.38
+"Occ.Pal.Terr","United States",2020,"Import",5915.34
+"French Polynesia","United States",2020,"Import",22556.79
+"Qatar","United States",2020,"Import",1218144.26
+"Romania","United States",2020,"Import",2213158.81
+"Russian Federation","United States",2020,"Import",17711785.61
+"Rwanda","United States",2020,"Import",33594.21
+"Saudi Arabia","United States",2020,"Import",9520664.6
+"Senegal","United States",2020,"Import",104858.4
+"Serbia, FR(Serbia/Montenegro)","United States",2020,"Import",468616.3
+"Singapore","United States",2020,"Import",31140358.27
+"Saint Helena","United States",2020,"Import",5313.91
+"Solomon Islands","United States",2020,"Import",3464.71
+"Sierra Leone","United States",2020,"Import",32768.45
+"El Salvador","United States",2020,"Import",1991602.04
+"San Marino","United States",2020,"Import",12656.66
+"Somalia","United States",2020,"Import",534.18
+"Saint Pierre and Miquelon","United States",2020,"Import",52.82
+"South Sudan","United States",2020,"Import",116.04
+"Sao Tome and Principe","United States",2020,"Import",928.21
+"Sudan","United States",2020,"Import",85775.65
+"Suriname","United States",2020,"Import",183757.29
+"Slovak Republic","United States",2020,"Import",5098829.91
+"Slovenia","United States",2020,"Import",1221943.33
+"Sweden","United States",2020,"Import",12867768.97
+"Eswatini","United States",2020,"Import",19925.34
+"Saint Maarten (Dutch part)","United States",2020,"Import",46908.13
+"Seychelles","United States",2020,"Import",8782.54
+"Syrian Arab Republic","United States",2020,"Import",10386
+"Turks and Caicos Isl.","United States",2020,"Import",4957.61
+"Chad","United States",2020,"Import",3620.52
+"Togo","United States",2020,"Import",21442.58
+"Thailand","United States",2020,"Import",39221175.67
+"Tajikistan","United States",2020,"Import",872.84
+"Tokelau","United States",2020,"Import",2626.44
+"Turkmenistan","United States",2020,"Import",15010.85
+"East Timor","United States",2020,"Import",4631.88
+"Tonga","United States",2020,"Import",3812.79
+"Trinidad and Tobago","United States",2020,"Import",2609945.48
+"Tunisia","United States",2020,"Import",591854.45
+"Turkey","United States",2020,"Import",11754371.12
+"Tuvalu","United States",2020,"Import",62.47
+"Tanzania","United States",2020,"Import",123873.42
+"Uganda","United States",2020,"Import",86772.07
+"Ukraine","United States",2020,"Import",1376073.85
+"Uruguay","United States",2020,"Import",586123.1
+"Uzbekistan","United States",2020,"Import",81509.57
+"Holy See","United States",2020,"Import",1684.22
+"St. Vincent and the Grenadines","United States",2020,"Import",5947.19
+"Venezuela","United States",2020,"Import",179318.42
+"British Virgin Islands","United States",2020,"Import",8525.1
+"Vietnam","United States",2020,"Import",83211920.32
+"Vanuatu","United States",2020,"Import",5503.06
+"Wallis and Futura Isl.","United States",2020,"Import",795.73
+"Samoa","United States",2020,"Import",5316.35
+"Yemen","United States",2020,"Import",4141.51
+"South Africa","United States",2020,"Import",11440399.53
+"Congo, Dem. Rep.","United States",2020,"Import",30703.79
+"Zambia","United States",2020,"Import",41465.5
+"Zimbabwe","United States",2020,"Import",37990.78
