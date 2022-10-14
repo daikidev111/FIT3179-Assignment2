@@ -71,9 +71,9 @@
   .tooltip {
     position: absolute;
     display: none;
-    background: rgba(0, 0, 0, 0.6);
+    background: white;
     border-radius: 3px;
     box-shadow: -3px 3px 15px #888;
-    color: white;
+    color: black;
     padding: 6px;
   }

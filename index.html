@@ -236,7 +236,7 @@
             tooltip.style('left', (d3.event.pageX + 10) + 'px')
             .style('top', (d3.event.pageY - 25) + 'px')
             .style('display', 'inline-block')
-            .html(data.gdp_percentage); /// data.industry_type
+            .html("GDP Percentage: " + data.gdp_percentage + "%" + "</br>&emsp; &emsp; &emsp; Industry: " + data.industry_type)        
         }
     
         function hideTooltip() {
