@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Unemployment Rate (2021)",
-  "width": 800,
+  "width": 640,
   "height": 400,
   "projection": {"type": "equalEarth"},
   "data": {

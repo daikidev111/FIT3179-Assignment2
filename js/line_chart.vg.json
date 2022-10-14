@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Comparison of GDP, COVID-19 new cases, and inflation rate",
+    "width": 240,
+    "height": 300,
     "data": {"url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/three-line-chart.csv"},
     "layer": [
         {
