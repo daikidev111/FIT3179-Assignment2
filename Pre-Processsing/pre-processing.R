@@ -180,3 +180,4 @@ colnames(export_df)[2] = "to"
 colnames(import_df)[4] = "trade_type"
 colnames(export_df)[4] = "trade_type"
 both_df = rbind(export_df, import_df)
+write.csv(both_df, paste(path_to_write, "trade.csv"), row.names = FALSE)
