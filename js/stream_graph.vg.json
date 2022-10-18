@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500, "height": 300,
+    "data": {"url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/unemployment-count.csv"},
+    "layer": [
+      {
+        "selection": {
+          "category_highlight": {
+            "name": "category_highlight",
+            "type": "multi",
+            "fields": ["series"],
+            "bind": "legend"
+          }
+        },
+        "mark": "area",
+        "encoding": {
+          "x": {
+          "timeUnit": "yearmonth", "field": "date",
+          "axis": {"domain": false, "format": "%Y", "tickSize": 5}
+          },
+          "y": {
+          "aggregate": "sum", "field": "count",
+          "axis": null,
+          "stack": "center"
+          },
+          "color": {
+            "field": "series", 
+            "scale": {"scheme": "tableau20"}
+          },
+          "opacity": {
+            "condition": {
+              "selection": "category_highlight", "value": 0.8
+            },
+            "value": 0.2
+          }
+        }
+      }
+    ]
+  }
