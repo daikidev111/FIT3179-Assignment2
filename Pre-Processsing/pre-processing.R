@@ -188,3 +188,24 @@ unemployment_count_df <- unemployment_count_df %>% na.omit(unemployment_count_df
 unemployment_count_df$date <- as.POSIXct(unemployment_count_df$date, format = "%m/%d/%Y %H:%M:%S")
 unemployment_count_df$date <- format(unemployment_count_df$date, format="%m/%d/%Y")
 write.csv(unemployment_count_df, paste(path_to_write, "unemployment-count.csv"), row.names = FALSE)
+
+# bump chart:
+
+# required
+# - countries G20
+# year 
+# GDP relative change
+bump_df <- read_excel("gdp_data.xlsx")
+colnames(bump_df)[1] = "country"
+bump_df = bump_df %>% filter((bump_df$country == "United States") | (bump_df$country == "China") | (bump_df$country == "India") | (bump_df$country == "United Kingdom") | (bump_df$country == "Germany") | (bump_df$country == "Japan") | (bump_df$country == "France"))
+#cols = 11
+write.csv(bump_df, paste(path_to_write, "gdp_data.csv"), row.names=FALSE)
+
+# first loop through the years 
+#for (i in nrow(bump_df)) {
+#  while (cols > 0) {
+#    
+#  }
+#}
+
+
