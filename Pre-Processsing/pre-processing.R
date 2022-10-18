@@ -181,3 +181,10 @@ colnames(import_df)[4] = "trade_type"
 colnames(export_df)[4] = "trade_type"
 both_df = rbind(export_df, import_df)
 write.csv(both_df, paste(path_to_write, "trade.csv"), row.names = FALSE)
+
+# streamgraph 
+unemployment_count_df <- read.csv("unemployment-count.csv")
+unemployment_count_df <- unemployment_count_df %>% na.omit(unemployment_count_df)
+unemployment_count_df$date <- as.POSIXct(unemployment_count_df$date, format = "%m/%d/%Y %H:%M:%S")
+unemployment_count_df$date <- format(unemployment_count_df$date, format="%Y")
+write.csv(unemployment_count_df, paste(path_to_write, "unemployment-count.csv"), row.names = FALSE)
