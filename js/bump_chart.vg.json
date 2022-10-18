@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Ranking of GDP growth (%) for the selected countries",
+      "frame": "bounds"
+    },
+    "width": 500, 
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/gdp_data_modified.csv"
+    },
+    "transform": [{
+      "sort": [
+        {"field": "Relative change in GDP (%)", "order": "descending"}
+      ],
+      "window": [{
+        "op": "rank",
+        "as": "rank"
+      }],
+      "groupby": ["Year"]
+    }],
+    "layer": [
+      {
+        "selection": {
+          "category_highlight": {
+            "name": "category_highlight",
+            "type": "multi",
+            "fields": ["country"],
+            "bind": "legend"
+          }
+        },
+        "mark": {"type": "line", "orient": "vertical", "point": true},
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal", "axis": {"grid": true}},
+          "y": {"field": "rank", "type": "ordinal", "axis": {"grid": true}},
+          "color": {
+            "field": "country", "type": "nominal",
+            "scale": {"scheme": "tableau20"}
+          },
+          "opacity": {
+            "condition": {
+              "selection": "category_highlight", "value": 0.8
+            },
+            "value": 0.2
+          },
+          "tooltip": [
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {"field": "rank", "type": "quantitative", "title": "Rank"},
+            {"field": "Year", "type": "nominal", "title": "Year"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "style": {
+        "point": {
+          "size": 300
+        }
+      }
+    }
+  }
+  
