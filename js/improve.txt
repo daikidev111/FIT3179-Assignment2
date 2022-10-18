@@ -13,3 +13,19 @@
 2. modify tooltip
 3. legend and interaction with it
 4. sort the data?
+
+# bubble plot:
+Unemployment rate vs inflation rate with z-index of GDP per capita
+
+# choropleth:
+World map with GDP per capita
+
+# Things to check later:
+    # color consistency
+        - Color blind friendly colors
+    # annotations
+        - Add as many of annotations as possible
+    # typeface
+        - Non-standard typeface
+    # interactions
+        - At least the legend interaction
