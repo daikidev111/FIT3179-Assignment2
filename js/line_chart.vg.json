@@ -41,7 +41,7 @@
             "encoding": {
               "x": {"field": "year", "type": "temporal", "title": "Year"},
               "y": {"field": "value", "type": "quantitative", "title": "Standardised Value"},
-              "color": {"field": "category", "type": "nominal", "title": "Category"},
+              "color": {"field": "category", "type": "nominal", "title": "Category", "scale": {"scheme": "tableau20"}},
               "tooltip": [
                 {"field": "category", "type": "nominal"},
                 {"field": "year", "type": "temporal", "format": ","},

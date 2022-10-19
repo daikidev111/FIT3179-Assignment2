@@ -3,7 +3,33 @@
   "title": "GDP per capita across the world (2020)",
   "width": 640,
   "height": 400,
-  "projection": {"type": "equalEarth"},
+  "params": [
+  {
+    "name": "zoom_level",
+    "value": 120,
+    "bind": {
+      "input": "range",
+      "min": 120,
+      "max": 550,
+      "step": 10,
+      "name": "Zoom: "
+    } 
+  }, {
+    "name": "center_to",
+    "value": [0, 0],
+    "bind": {
+      "input": "select",
+      "options": [
+        [0, 0],
+        [36.2048, 158.2529],
+        [37.0902, 95.7129],
+        [61.5240, 105.3188]
+      ],
+      "labels": ["Original View", "Japan", "United States of America", "Russian Federation"],
+  "name": "Map Centre: "
+}}],
+  "projection": {"type": "equalEarth", "center": {"expr": "center_to"},
+"scale": {"expr": "zoom_level"}},
   "data": {
     "url": "https://raw.githubusercontent.com/daikidev111/vega-lite-hw/main/js/ne_110m.json",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}

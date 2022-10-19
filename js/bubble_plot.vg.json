@@ -31,7 +31,8 @@
     "color": {
       "field": "country",
       "type": "nominal",
-      "legend": null
+      "legend": null,
+      "scale": {"scheme": "tableau20"}
     }
   },
   "layer": [
