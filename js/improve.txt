@@ -9,13 +9,8 @@
 
 
 # radial bar chart
-1. embed in the vis
 2. modify tooltip
-3. legend and interaction with it
 4. sort the data?
-
-# bubble plot:
-Unemployment rate vs inflation rate with z-index of GDP per capita
 
 # Things to check later:
     # color consistency

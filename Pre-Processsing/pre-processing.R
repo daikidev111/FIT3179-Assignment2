@@ -86,7 +86,7 @@ for (i in 1:nrow(df)){
 }
 
 #df$country[37] = "China"
-df = df %>% filter((df$country == "United States") | (df$country == "China") | (df$country == "India") | (df$country == "United Kingdom") | (df$country == "Germany") | (df$country == "Japan") | (gdp_df$country == "France"))
+#df = df %>% filter((df$country == "United States") | (df$country == "China") | (df$country == "India") | (df$country == "United Kingdom") | (df$country == "Germany") | (df$country == "Japan") | (gdp_df$country == "France"))
 write.csv(df, paste(path_to_write, "economics_improved.csv"), row.names=FALSE)
 
 # countries selected for the analysis
