@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Unemployment Rate (2021)",
+  "title": "GDP per capita across the world (2020)",
   "width": 640,
   "height": 400,
   "projection": {"type": "equalEarth"},
@@ -32,7 +32,7 @@
     },
     {
       "transform": [
-        {"calculate": "'Unemployment data is not available in the country: ' + datum.properties.NAME", "as": "unavailable"}
+        {"calculate": "'GDP per capita data is not available in the country: ' + datum.properties.NAME", "as": "unavailable"}
       ],
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white", "strokeWidth": 1},
       "encoding": {
@@ -47,28 +47,28 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/unemployment.csv"
+              "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/GDP_per_capita.csv"
             },
             "key": "Country Name",
             "fields": ["most_recent_year"]
           }
         },
-        {"calculate": "datum.most_recent_year", "as": "2021-unemployment"}
+        {"calculate": "datum.most_recent_year", "as": "2020-GDP-per-capita"}
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-          "field": "2021-unemployment",
+          "field": "2020-GDP-per-capita",
           "scale": {
             "type": "threshold",
-            "domain": [5, 10, 15, 20],
-            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#c4490c","#a63603"]
+            "domain": [1000, 2000, 4000, 8000, 16000, 32000, 64000],
+            "range": ["#f9ddb1", "#f5c77e", "#f1b04c", "#ec9006","#e88504", "#e27602", "#dc6601", "#d24e01"]
           },
-          "title": "Unemployment Rate"
+          "title": "GDP per capita"
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "most_recent_year", "type": "quantitative", "format": ".2f", "title": "Unemployment Rate (%)"}
+          {"field": "most_recent_year", "type": "quantitative", "format": ".2f", "title": "GDP per capita (in US$)"}
         ]
       }
     }
