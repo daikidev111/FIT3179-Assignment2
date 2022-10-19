@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500, "height": 300,
+  "width": 550,
+  "height": 400,
   "title": "Number of unemployment during the years 2000 - 2010 by industries",
   "data": {"url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/unemployment-count.csv"},
   "layer": [

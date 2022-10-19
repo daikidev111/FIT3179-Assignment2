@@ -1,10 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Ranking of GDP growth (%) for the selected countries",
-      "frame": "bounds"
-    },
-    "width": 500, 
+    "width": 240,
     "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/gdp_data_modified.csv"
