@@ -21,3 +21,6 @@
         - Non-standard typeface
     # interactions
         - At least the legend interaction
+
+# zoom level interaction on the map
+# slide bar for the bubble chart
