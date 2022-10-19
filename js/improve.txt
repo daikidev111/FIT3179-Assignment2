@@ -9,12 +9,9 @@
 
 # radial bar chart
 2. modify tooltip
-4. sort the data?
 
 # Things to check later:
     # annotations
         - Add as many of annotations as possible
-
-# slide bar for the bubble chart
 
 # color the text
