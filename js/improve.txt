@@ -17,9 +17,6 @@
 # bubble plot:
 Unemployment rate vs inflation rate with z-index of GDP per capita
 
-# choropleth:
-World map with GDP per capita
-
 # Things to check later:
     # color consistency
         - Color blind friendly colors

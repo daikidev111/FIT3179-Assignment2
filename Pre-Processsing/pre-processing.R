@@ -22,6 +22,7 @@ unemp_df <- read_excel("unemployment.xls")
 gni_df <- read.csv("GNI.csv")
 gdp_df <- read.csv("GDP_per_capita.csv")
 covid_df <- read.csv("covid-data.csv")
+inflation_df <-read.csv("inflation_world.csv")
 
 #https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?view=chart
 path_to_write <- "~/Desktop/FIT3179-Assignment2/Cleaned_Datasets/"
@@ -37,46 +38,56 @@ covid_df <- covid_df %>% clean_names()
 covid_df <- covid_df %>% na.omit(covid_df)
 
 gdp_covid_df <- gdp_covid_df %>% na.omit(gdp_covid_df)
+
+inflation_df <-inflation_df %>% na.omit(inflation_df)
 #### DATA MANIPULATION #####
 colnames(gdp_df)[1] = "country"
 colnames(unemp_df)[1] = "country"
 colnames(gni_df)[1] = "country"
+colnames(inflation_df)[1] = "country"
 
 #gdp_df = select(gdp_df, -c(2:40))
 unemp_df = select(unemp_df, -c(2:40))
 gdp_df = select(gdp_df, -c(3:10))
 unemp_df = select(unemp_df, -c(3:10))
+inflation_df = select(inflation_df, -c(2))
+
 colnames(gdp_df)[2] = "2019_GDP"
 colnames(unemp_df)[2] = "2019_UNEMP"
 colnames(gni_df)[2] = "2019_GNI"
-df = merge(gdp_df, unemp_df, by = "country")
-df = merge(df, gni_df, by="country")
+colnames(inflation_df)[2] = "2019_INF"
 
-for (i in 1:nrow(df)) {
-  if (df$`2019_GNI`[i] >= 13205) {
-    df$Class[i] = "High Income"
-  } else if (df$`2019_GNI`[i] <= 1085) {
-    df$Class[i] = "Low Income"
-  } else if (df$`2019_GNI`[i] > 1085 && df$`2019_GNI`[i] <= 4255) {
-    df$Class[i] = "Lower Middle Income"
-  } else {
-    df$Class[i] = "Upper Middle Income"
-  }
-}
+df = merge(gdp_df, unemp_df, by = "country")
+#df = merge(df, gni_df, by="country")
+
+df = merge(df, inflation_df, by="country")
+
+#for (i in 1:nrow(df)) {
+#  if (df$`2019_GNI`[i] >= 13205) {
+#    df$Class[i] = "High Income"
+#  } else if (df$`2019_GNI`[i] <= 1085) {
+#    df$Class[i] = "Low Income"
+#  } else if (df$`2019_GNI`[i] > 1085 && df$`2019_GNI`[i] <= 4255) {
+#    df$Class[i] = "Lower Middle Income"
+#  } else {
+#    df$Class[i] = "Upper Middle Income"
+#  }
+#}
 
 #change the datatype
 df$`2019_GDP` = as.numeric(df$`2019_GDP`)
 df$`2019_UNEMP` = as.numeric(df$`2019_UNEMP`)
+df$`2019_INF` = as.numeric(df$`2019_INF`)
 
 for (i in 1:nrow(df)){
   df$`2019_GDP`[i] = round(df$`2019_GDP`[i], 2)
   df$`2019_UNEMP`[i] = round(df$`2019_UNEMP`[i], 2)
-  df$`2019_GNI`[i] = round(df$`2019_GNI`[i], 2)
+  df$`2019_INF`[i] = round(df$`2019_INF`[i], 2)
 }
 
-#gdp_df$country[37] = "China"
-#gdp_df = gdp_df %>% filter((gdp_df$country == "United States") | (gdp_df$country == "China") | (gdp_df$country == "India") | (gdp_df$country == "United Kingdom") | (gdp_df$country == "Germany") | (gdp_df$country == "Japan") | (gdp_df$country == "France"))
-#write.csv(df, paste(path_to_write, "economics.csv"), row.names=FALSE)
+#df$country[37] = "China"
+df = df %>% filter((df$country == "United States") | (df$country == "China") | (df$country == "India") | (df$country == "United Kingdom") | (df$country == "Germany") | (df$country == "Japan") | (gdp_df$country == "France"))
+write.csv(df, paste(path_to_write, "economics_improved.csv"), row.names=FALSE)
 
 # countries selected for the analysis
 #"China"
