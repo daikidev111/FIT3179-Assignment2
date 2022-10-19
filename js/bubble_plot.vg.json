@@ -2,39 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 550,
   "height": 400,
-  "title": "Income level against GDP and Unemployment in 2019",
+  "title": "GDP per capita against Inflationrate  and Unemployment in 2019",
   "data": {
-    "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/economics.csv"
+    "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/economics_improved.csv"
   },
   "params": [
-    {
-      "name": "Income_selection",
-      "bind": {
-        "input": "select",
-        "options": [
-          null,
-          "High Income",
-          "Upper Middle Income",
-          "Lower Middle Income",
-          "Low Income"
-        ],
-        "labels": [
-          "Show All",
-          "High Income Countries",
-          "Upper Middle Income Countries",
-          "Lower Middle Income Countries",
-          "Low Income Countries"
-        ],
-        "name": "Income Class Selection: "
-      }
-    }
   ],
   "transform": [
     {"filter": "datum['2019_GDP'] > 0"},
     {"filter": "datum['2019_UNEMP'] > 0"},
-    {
-      "filter": "Income_selection == null || datum['Class'] == Income_selection"
-    }
+    {"filter": "datum['2019_INF'] > 0"}
   ],
   "encoding": {
     "x": {
@@ -42,32 +19,19 @@
       "type": "quantitative",
       "title": "Unemployment rate in 2019",
       "axis": {"tickCount": 7},
-      "scale": {"type": "linear", "domain": [0, 30]}
+      "scale": {"type": "linear", "domain": [0, 15]}
     },
     "y": {
-      "field": "2019_GDP",
+      "field": "2019_INF",
       "type": "quantitative",
-      "title": "GDP per capita in 2019",
+      "title": "Inflation rate in 2019",
       "axis": {"tickCount": 6},
-      "scale": {"type": "linear", "domain": [0, 117300]}
+      "scale": {"type": "linear", "domain": [0, 10]}
     },
     "color": {
-      "field": "Class",
+      "field": "country",
       "type": "nominal",
-      "scale": {
-        "domain": [
-          "High Income",
-          "Upper Middle Income",
-          "Lower Middle Income",
-          "Low Income"
-        ],
-        "range": [
-          "#e41a1c",
-          "#984ea3",
-          "#ff7f00",
-          "#a6cee3"
-        ]
-      }
+      "legend": null
     }
   },
   "layer": [
@@ -75,12 +39,12 @@
       "mark": "circle",
       "encoding": {
         "size": {
-          "field": "2019_GNI",
+          "field": "2019_GDP",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
             "domain": [1000, 5000, 10000, 30000, 50000, 70000],
-            "range": [100, 250, 500, 1000, 1500, 2000, 3000]
+            "range": [50, 125, 250, 500, 750, 1000, 1250]
           },
           "legend": {"format": ".1f"}
         },
@@ -97,21 +61,16 @@
             "format": ","
           },
           {
-            "field": "2019_UNEMP", 
-            "title": "Unemployment rate (2019)", 
+            "field": "2019_INF", 
+            "title": "Inflation rate (2019)", 
             "type": "quantitative", 
             "format": ","
           },
           {
-            "field": "2019_GNI",
+            "field": "2019_UNEMP",
             "type": "quantitative",
-            "title": "GNI index (2019)",
+            "title": "Unemployment Rate (2019)",
             "format": ","
-          },
-          {
-            "field": "Class",
-            "type": "nominal",
-            "title": "Income Class (2019)"
           }
         ]
       }
@@ -134,7 +93,7 @@
         },
         "opacity": {
           "condition": {
-            "test": "datum['country'] == 'France' || datum['country'] == 'Japan' || datum['country'] == 'Germany' || datum['country'] == 'South Africa'",
+            "test": "datum['country'] == 'France' || datum['country'] == 'Japan' || datum['country'] == 'New Zealand' || datum['country'] == 'South Africa'",
             "value": 1
           },
           "value": 0
@@ -144,10 +103,10 @@
     {
       "transform": [
         {
-          "filter": "datum['country'] == 'Luxembourg'"
+          "filter": "datum['country'] == 'Russian Federation'"
         },
         {
-          "calculate": "'The Highest GDP per capita: ' + datum['2019_GDP']", 
+          "calculate": "'The Highest Inflation Rate is ' + datum['2019_INF'] + '%'", 
           "as": "text_annotation"
         },
         {
