@@ -7,11 +7,23 @@
     "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/economics_improved.csv"
   },
   "params": [
+    {
+      "name": "GDP_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 150000,
+        "step": 1000,
+        "name": "Minimum GDP per Capita: "
+      }
+    }
   ],
   "transform": [
     {"filter": "datum['2019_GDP'] > 0"},
     {"filter": "datum['2019_UNEMP'] > 0"},
-    {"filter": "datum['2019_INF'] > 0"}
+    {"filter": "datum['2019_INF'] > 0"},
+    {"filter": "datum['2019_GDP'] > GDP_Above"}
   ],
   "encoding": {
     "x": {
@@ -19,14 +31,14 @@
       "type": "quantitative",
       "title": "Unemployment rate in 2019",
       "axis": {"tickCount": 7},
-      "scale": {"type": "linear", "domain": [0, 15]}
+      "scale": {"type": "linear", "domain": [0, 14.5]}
     },
     "y": {
       "field": "2019_INF",
       "type": "quantitative",
       "title": "Inflation rate in 2019",
       "axis": {"tickCount": 6},
-      "scale": {"type": "linear", "domain": [0, 10]}
+      "scale": {"type": "linear", "domain": [0, 5]}
     },
     "color": {
       "field": "country",
@@ -42,6 +54,7 @@
         "size": {
           "field": "2019_GDP",
           "type": "quantitative",
+          "title": "GDP per capita",
           "scale": {
             "type": "threshold",
             "domain": [1000, 5000, 10000, 30000, 50000, 70000],

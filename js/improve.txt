@@ -1,7 +1,6 @@
 
 
 # line-chart.vg.json
-1. Fix the direct legend interaction
 2. Fix the year not showing in the tooltip
 3. Add an annotation in the chart
 4. show the value up to 2 sig fig
@@ -13,14 +12,9 @@
 4. sort the data?
 
 # Things to check later:
-    # color consistency
-        - Color blind friendly colors
     # annotations
         - Add as many of annotations as possible
-    # typeface
-        - Non-standard typeface
-    # interactions
-        - At least the legend interaction
 
-# zoom level interaction on the map
 # slide bar for the bubble chart
+
+# color the text
