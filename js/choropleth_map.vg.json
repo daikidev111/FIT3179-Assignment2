@@ -119,13 +119,23 @@
         "align": "left",
         "baseline": "middle",
         "dx": 30,
-        "fontSize": 8,
-        "fontStyle": "bold",
+        "fontStyle": "italic",
         "color": "black"
       },
       "encoding": {
         "text": {"field": "text"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "font": "sans-serif", 
+      "fontSize": 14
+    },
+      "text": {
+        "font": "sans-serif", 
+        "fontSize": 10,
+        "fontStyle": "italic"
+      }
+    }
 }

@@ -77,5 +77,16 @@
         }
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "font": "sans-serif", 
+      "fontSize": 14
+    },
+    "text": {
+      "font": "sans-serif", 
+      "fontSize": 10,
+      "fontStyle": "black"
+    }
+  }
 }

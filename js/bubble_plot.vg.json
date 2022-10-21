@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 550,
   "height": 400,
-  "title": "GDP per capita against Inflationrate  and Unemployment in 2019",
+  "title": "GDP per capita against Inflation rate  and Unemployment in 2019",
   "data": {
     "url": "https://raw.githubusercontent.com/daikidev111/FIT3179-Assignment2/main/Cleaned_Datasets/economics_improved.csv"
   },
@@ -145,6 +145,11 @@
     "title": {
       "font": "sans-serif", 
       "fontSize": 14
+    },
+    "text": {
+      "font": "sans-serif", 
+      "fontSize": 10,
+      "fontStyle": "italic"
     }
   }
 }
