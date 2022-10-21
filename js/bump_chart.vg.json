@@ -45,6 +45,40 @@
             {"field": "Year", "type": "nominal", "title": "Year"}
           ]
         }
+      },
+      {
+        "transform": [
+          {
+            "calculate": "'United Kingdom'",
+            "as": "text_annotation"
+          }, {
+            "calculate": "split(datum.text_annotation, ';')", 
+            "as": "text"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "baseline": "middle",
+          "dx": 80,
+          "dy": -140, 
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {
+            "field": "text", 
+            "type": "nominal"
+          },
+          "color": {
+            "value": "#4e9f50"
+          },
+          "opacity": {
+            "condition": {
+              "test": "datum['country'] == 'United Kingdom'",
+              "value": 1
+            },
+            "value": 0
+          }
+        }
       }
     ],
     "config": {

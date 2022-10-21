@@ -44,7 +44,6 @@
               "color": {"field": "category", "type": "nominal", "title": "Category", "scale": {"scheme": "tableau20"}},
               "tooltip": [
                 {"field": "category", "type": "nominal"},
-                {"field": "year", "type": "temporal", "format": ","},
                 {"field": "value", "type": "quantitative", "format": ","}
 
               ]
@@ -72,6 +71,40 @@
                   }
                 }
               ]
+        },
+        {
+          "transform": [
+            {
+              "calculate": "'Positive correlation between; COVID-19, inflation rate, and GDP; in 2020-2021'",
+              "as": "text_annotation"
+            }, {
+              "calculate": "split(datum.text_annotation, ';')", 
+              "as": "text"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "baseline": "middle",
+            "dx": 20,
+            "dy": -100, 
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "text": {
+              "field": "text", 
+              "type": "nominal"
+            },
+            "color": {
+              "value": "black"
+            },
+            "opacity": {
+              "condition": {
+                "test": "datum['category'] == 'Inflation Rate'",
+                "value": 1
+              },
+              "value": 0
+            }
+          }
         }
     ]
   }

@@ -42,6 +42,40 @@
           {"field": "series", "type": "nominal", "title": "Industry Type"}
         ]
       }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "'Highest Unemployment count is; 2194 in construction'",
+          "as": "text_annotation"
+        }, {
+          "calculate": "split(datum.text_annotation, ';')", 
+          "as": "text"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "middle",
+        "dx": 160,
+        "dy": -100, 
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {
+          "field": "text", 
+          "type": "nominal"
+        },
+        "color": {
+          "value": "black"
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['count'] >= 2440",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
     }
   ]
 }

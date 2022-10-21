@@ -97,6 +97,35 @@
           {"field": "most_recent_year", "type": "quantitative", "format": ".2f", "title": "GDP per capita (in US$)"}
         ]
       }
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "most_recent_year", "order": "ascending"}]
+        },
+        {"filter": "datum.ranking == 1"},
+        {
+          "calculate": "'The lowest GDP per capita is: ; 596.96 in US$'",
+          "as": "text_annotation"
+        }, {
+          "calculate": "split(datum.text_annotation, ';')", 
+          "as": "text"
+        }
+
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 30,
+        "fontSize": 8,
+        "fontStyle": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {"field": "text"}
+      }
     }
   ]
 }
